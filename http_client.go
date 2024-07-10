@@ -12,7 +12,7 @@ var (
 	}
 )
 
-func Get(url string) ([]byte, error) {
+func httpGet(url string) ([]byte, error) {
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, err
